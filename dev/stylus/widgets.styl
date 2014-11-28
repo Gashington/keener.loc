@@ -1,0 +1,253 @@
+@import '/mixin/sprite'
+/*Логотип в шапке*/
+.logo
+  margin 33px 0 0 0
+
+/*Навигация*/
+.navbar-default
+  margin 37px 0 0 0
+  border none
+  box-shadow none
+  background none
+  .navbar-collapse
+    padding 0
+    li
+      a
+        padding 0 17px
+      &.active
+      &:hover
+      &:focus
+        a
+          box-shadow none
+          background-image none
+          background none
+          &:hover
+          &:focus
+            background transparent
+      &:first-child
+        a
+          padding-left 0
+  &.dark
+    margin 0
+    .navbar-collapse
+      li
+        a
+          color #808080
+        &.active
+        &:hover
+        &:focus
+          a
+            color white
+
+/*Форма поиска в шапке*/
+.search-bar
+  position relative
+  margin 30px 0 0 0
+  padding 0
+  .search-input
+    padding 10px 30px 9px 10px
+    border 1px solid #646464
+  .search-btn
+    position absolute
+    top 8px
+    right 10px
+    padding 0
+    border none
+    border-radius 0
+    box-shadow none
+    sprite($s-serarch-ico)
+    text-indent 10000px
+
+/* Слайдер*/
+.slider
+  padding 0
+  .item
+    height 721px
+    background-repeat no-repeat
+    background-size cover!important
+  .slide
+  .slide-wrap
+    height 100%
+  .slide-wrap
+    background rgba(49, 121, 250, 0.85)
+  .slide-desc
+    float right
+    width 400px
+  .slide-title
+    margin 75px 0 40px 0
+    color #ffffff
+    font-size 48px
+  .slide-img
+    margin 0 0 30px 0
+  .carousel-control
+    .icon
+      position absolute
+      top 50%
+      display inline-block
+      color #ffffff
+      font-size 75px
+    &.left
+      .icon
+        left 30%
+    &.right
+      .icon
+        right 30%
+  .slide-lnks
+    .readmore-lnk
+      font-size 16px
+      &:first-child
+        margin 0 17px 0 0
+/* Мозайка на главной*/
+.maze
+  >div
+    height 400px
+  .maze-item
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 400px
+    background-repeat no-repeat
+    background-size cover!important
+    &.lg
+      height 800px
+  .maze-teaser
+    .teaser-title
+      margin 0 0 23px 0
+      font 300 24px 'Roboto'
+      text-transform uppercase
+    .teaser-txt
+      margin 0 0 22px 0
+      font-size 14px
+    .readmore-lnk
+      font-size 14px
+    &.lpad
+      padding 120px 0
+    &.rpad
+      padding 90px 0
+    &.pop
+      position absolute
+      bottom 0
+      width 100%
+      padding 23px 30px
+      background #ffffff
+      .teaser-txt
+        margin 0 0 8px 0
+  .maze-caption
+    position absolute
+    bottom 0
+    padding 40px
+    font 300 24px 'Roboto'
+    text-transform uppercase
+    &.light
+      color #fff
+    &.dark
+      color #000
+  .hover-up
+    position absolute
+    width 100%
+    height 100%
+    background rgba(0, 0, 0, 0.4)
+  .maze-btn
+    position absolute
+    top 50%
+    left 50%
+    width 170px
+    height 40px
+    margin -20px 0 0 -85px
+    border-radius 3px
+    border 1px solid white
+    color white
+    font-size 13px
+    text-transform uppercase
+    text-decoration none
+    text-align center
+    line-height 40px
+    &:hover
+      border 2px solid white
+      line-height 38px
+  .pop-caption
+    cursor pointer
+
+/* Все ссылки вида читать далее*/
+.readmore-lnk
+  font normal 18px 'PT Sans' sans-serif
+  span
+    text-decoration underline
+  .icon
+    position relative
+    top 3px
+  &.white
+    color #ffffff
+  &:hover
+    text-decoration none
+    color #000000
+
+    /* Карусель товаров на внутренних страницах */
+#myCarousel
+  .product-item
+    padding-top 30px
+    padding-bottom 30px
+    text-decoration none
+    &:hover
+      background #f7f7f7
+  .thumbnail
+    margin 0
+    background none
+    border none
+    box-shadow none
+  .caption
+    color #000
+    font-size 13px
+    text-align center
+  .carousel-control
+    position relative
+    top 60px
+    background none
+    color #8b8b8b
+    font-size 60px
+
+/* галерея изображений товара */
+#product-gallery
+  .carousel-inner
+    margin-bottom 10px
+  .thumbs-control
+    img
+      cursor pointer
+
+    /*Дополнительное меню второго уровня на внутренних страницах*/
+.second-nav
+  li
+    background #000000
+    a
+      display block
+      padding 20px 0
+      color #ffffff
+      font 300 18px 'Roboto'
+      text-align center
+      text-decoration none
+    &:hover
+    &.active
+      background #3179fa
+
+
+/*Кнопка купить*/
+.buy-btn
+  display inline-block
+  min-width 130px
+  height 40px
+  padding 0 20px
+  border-radius 3px
+  background-color #3179fa
+  background-image linear-gradient(to top, rgba(0,0,0,.15), rgba(255,255,255,.15))
+  color white
+  font 300 18px 'Roboto'
+  line-height 40px
+  text-decoration none
+  &:hover
+    background-color #5071AD
+    color white
+    text-decoration none
+
+
+

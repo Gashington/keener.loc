@@ -1,0 +1,188 @@
+/* Стилизация placeholder*/
+input::-webkit-input-placeholder {
+  color: #424242 !important;
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+input::-moz-placeholder {
+  color: #424242 !important;
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+/* Firefox 19+ */
+input:-moz-placeholder {
+  color: #424242 !important;
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+/* Firefox 18- */
+input:-ms-input-placeholder {
+  color: #424242 !important;
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+input:focus::-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+input:focus:-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+/* шрифтовые Иконки*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-nx6pl1");
+  src: url("../fonts/icomoon.eot?#iefix-nx6pl1") format('embedded-opentype') url("../fonts/icomoon.woff?-nx6pl1") format('woff') url("../fonts/icomoon.ttf?-nx6pl1") format('truetype') url("../fonts/icomoon.svg?-nx6pl1#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrowl:before {
+  content: "\e600";
+}
+.icon-arrowr:before {
+  content: "\e601";
+}
+.icon-readmore:before {
+  content: "\e602";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans' sans-serif;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Roboto' sans-serif;
+}
+.invisible {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+.gray-bg {
+  background-color: #fafafa;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.04), rgba(255,255,255,0.04));
+}
+main {
+  overflow: hidden;
+}
+.content p {
+  margin: 0 0 10px 0;
+}
+.content ul {
+  list-style: circle;
+}
+.container {
+  max-width: 1200px;
+}
+.header {
+  height: 95px;
+  padding: 0 0 36px 0;
+  border-bottom: 1px solid #646464;
+}
+.product-wrap {
+  padding: 80px 0;
+}
+.product-blk {
+  padding: 80px 0 80px 0;
+}
+.product-blk-add {
+  padding: 80px 0;
+}
+.product .product-desc {
+  padding: 90px 0 20px 0;
+}
+.product .product-desc .product-title {
+  margin: 0 0 30px 0;
+  font: 300 48px 'Roboto';
+}
+.product .product-desc .product-txt {
+  margin: 0 0 40px 0;
+}
+.product .product-desc .product-options {
+  margin: 0 0 50px 0;
+}
+.product .product-desc .product-option {
+  margin: 0 0 25px 0;
+  font: normal 18px 'PT Sans' sans-serif;
+}
+.product .product-desc .product-option .option-title {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+.product .product-desc .product-option .option {
+  color: #666;
+}
+.product .product-desc.sm {
+  padding: 40px 0 20px 0;
+}
+.product .product-desc.sm .product-title {
+  font-weight: bold;
+}
+.product .product-desc.sm .product-txt {
+  margin: 0 0 30px 0;
+}
+.product .product-lnks {
+  padding: 140px 0 0 0;
+}
+.product .product-img {
+  position: relative;
+}
+.product .product-img.s-pull-left {
+  left: -100px;
+}
+.product .product-img.m-pull-left {
+  left: -150px;
+}
+.product .product-img.h-pull-left {
+  left: -200px;
+}
+.product .product-img.s-pull-right {
+  right: -100px;
+}
+.product .product-img.m-pull-right {
+  right: -150px;
+}
+.product .product-img.h-pull-right {
+  right: -200px;
+}
+.footer {
+  padding: 30px 0 0 0;
+  background: #000;
+  color: #fff;
+}

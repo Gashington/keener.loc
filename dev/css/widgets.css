@@ -1,0 +1,289 @@
+/*Логотип в шапке*/
+.logo {
+  margin: 33px 0 0 0;
+}
+/*Навигация*/
+.navbar-default {
+  margin: 37px 0 0 0;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+.navbar-default .navbar-collapse {
+  padding: 0;
+}
+.navbar-default .navbar-collapse li a {
+  padding: 0 17px;
+}
+.navbar-default .navbar-collapse li.active a,
+.navbar-default .navbar-collapse li:hover a,
+.navbar-default .navbar-collapse li:focus a {
+  box-shadow: none;
+  background-image: none;
+  background: none;
+}
+.navbar-default .navbar-collapse li.active a:hover,
+.navbar-default .navbar-collapse li:hover a:hover,
+.navbar-default .navbar-collapse li:focus a:hover,
+.navbar-default .navbar-collapse li.active a:focus,
+.navbar-default .navbar-collapse li:hover a:focus,
+.navbar-default .navbar-collapse li:focus a:focus {
+  background: transparent;
+}
+.navbar-default .navbar-collapse li:first-child a {
+  padding-left: 0;
+}
+.navbar-default.dark {
+  margin: 0;
+}
+.navbar-default.dark .navbar-collapse li a {
+  color: #808080;
+}
+.navbar-default.dark .navbar-collapse li.active a,
+.navbar-default.dark .navbar-collapse li:hover a,
+.navbar-default.dark .navbar-collapse li:focus a {
+  color: #fff;
+}
+/*Форма поиска в шапке*/
+.search-bar {
+  position: relative;
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+.search-bar .search-input {
+  padding: 10px 30px 9px 10px;
+  border: 1px solid #646464;
+}
+.search-bar .search-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-image: url("../img/bg/sprite.png");
+  background-position: 0px 0px;
+  width: 16px;
+  height: 16px;
+  text-indent: 10000px;
+}
+/* Слайдер*/
+.slider {
+  padding: 0;
+}
+.slider .item {
+  height: 721px;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+.slider .slide,
+.slider .slide-wrap {
+  height: 100%;
+}
+.slider .slide-wrap {
+  background: rgba(49,121,250,0.85);
+}
+.slider .slide-desc {
+  float: right;
+  width: 400px;
+}
+.slider .slide-title {
+  margin: 75px 0 40px 0;
+  color: #fff;
+  font-size: 48px;
+}
+.slider .slide-img {
+  margin: 0 0 30px 0;
+}
+.slider .carousel-control .icon {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  color: #fff;
+  font-size: 75px;
+}
+.slider .carousel-control.left .icon {
+  left: 30%;
+}
+.slider .carousel-control.right .icon {
+  right: 30%;
+}
+.slider .slide-lnks .readmore-lnk {
+  font-size: 16px;
+}
+.slider .slide-lnks .readmore-lnk:first-child {
+  margin: 0 17px 0 0;
+}
+/* Мозайка на главной*/
+.maze >div {
+  height: 400px;
+}
+.maze .maze-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+.maze .maze-item.lg {
+  height: 800px;
+}
+.maze .maze-teaser .teaser-title {
+  margin: 0 0 23px 0;
+  font: 300 24px 'Roboto';
+  text-transform: uppercase;
+}
+.maze .maze-teaser .teaser-txt {
+  margin: 0 0 22px 0;
+  font-size: 14px;
+}
+.maze .maze-teaser .readmore-lnk {
+  font-size: 14px;
+}
+.maze .maze-teaser.lpad {
+  padding: 120px 0;
+}
+.maze .maze-teaser.rpad {
+  padding: 90px 0;
+}
+.maze .maze-teaser.pop {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 23px 30px;
+  background: #fff;
+}
+.maze .maze-teaser.pop .teaser-txt {
+  margin: 0 0 8px 0;
+}
+.maze .maze-caption {
+  position: absolute;
+  bottom: 0;
+  padding: 40px;
+  font: 300 24px 'Roboto';
+  text-transform: uppercase;
+}
+.maze .maze-caption.light {
+  color: #fff;
+}
+.maze .maze-caption.dark {
+  color: #000;
+}
+.maze .hover-up {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.maze .maze-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 170px;
+  height: 40px;
+  margin: -20px 0 0 -85px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+}
+.maze .maze-btn:hover {
+  border: 2px solid #fff;
+  line-height: 38px;
+}
+.maze .pop-caption {
+  cursor: pointer;
+}
+/* Все ссылки вида читать далее*/
+.readmore-lnk {
+  font: normal 18px 'PT Sans' sans-serif;
+}
+.readmore-lnk span {
+  text-decoration: underline;
+}
+.readmore-lnk .icon {
+  position: relative;
+  top: 3px;
+}
+.readmore-lnk.white {
+  color: #fff;
+}
+.readmore-lnk:hover {
+  text-decoration: none;
+  color: #000;
+/* Карусель товаров на внутренних страницах */
+}
+#myCarousel .product-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-decoration: none;
+}
+#myCarousel .product-item:hover {
+  background: #f7f7f7;
+}
+#myCarousel .thumbnail {
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+#myCarousel .caption {
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+}
+#myCarousel .carousel-control {
+  position: relative;
+  top: 60px;
+  background: none;
+  color: #8b8b8b;
+  font-size: 60px;
+}
+/* галерея изображений товара */
+#product-gallery .carousel-inner {
+  margin-bottom: 10px;
+}
+#product-gallery .thumbs-control img {
+  cursor: pointer;
+}
+.second-nav li {
+  background: #000;
+}
+.second-nav li a {
+  display: block;
+  padding: 20px 0;
+  color: #fff;
+  font: 300 18px 'Roboto';
+  text-align: center;
+  text-decoration: none;
+}
+.second-nav li:hover,
+.second-nav li.active {
+  background: #3179fa;
+}
+/*Кнопка купить*/
+.buy-btn {
+  display: inline-block;
+  min-width: 130px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 3px;
+  background-color: #3179fa;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.15), rgba(255,255,255,0.15));
+  color: #fff;
+  font: 300 18px 'Roboto';
+  line-height: 40px;
+  text-decoration: none;
+}
+.buy-btn:hover {
+  background-color: #5071ad;
+  color: #fff;
+  text-decoration: none;
+}
